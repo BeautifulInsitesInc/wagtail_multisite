@@ -1,0 +1,1 @@
+web: gunicorn savvyinsights.wsgi --log-file -
