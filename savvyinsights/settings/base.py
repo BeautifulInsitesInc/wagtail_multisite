@@ -88,13 +88,14 @@ WSGI_APPLICATION = "savvyinsights.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-""" Sqlite ------
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
     }
 }
+
 """
 DATABASES = {
     'default': {
@@ -102,6 +103,7 @@ DATABASES = {
         'NAME': 'savvyinsights_db',
     }
 }
+"""
 
 
 # Password validation
