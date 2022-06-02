@@ -9,7 +9,7 @@ from wagtail.admin.edit_handlers import FieldPanel
 class HomePage(Page):
     """Home page model """
 
-    templates = "home/home_page.html"
+    #templates = "home/home_page.html"
 
     banner_title = models.CharField(max_length=100, blank=False, null=True)
     body = RichTextField(blank=True)
