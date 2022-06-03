@@ -27,8 +27,13 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
-        {% block content %}{% endblock %}
-
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <p>folow me</p>
+            {{ settings.site_settings.SocialMediaSettings.instagram }}
+        </footer>
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/savvyinsights.js' %}"></script>
 

@@ -1,0 +1,9 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.block-heading {
+    font-size: 35px;
+    margin-top: auto;
+}

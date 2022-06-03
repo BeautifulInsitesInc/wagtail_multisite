@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static wagtailimages_tags%}
+{% load static wagtailimages_tags wagtailcore_tags%}
 
 {% load wagtailcore_tags %}
 
@@ -16,8 +16,19 @@
 
     Snipit:
     <h4>{{page.snipit}}</h4>
+    <hr>
+    <p> Body: <p>
+        {% include_block page.body %}
 
-    Rich text:
-    {{ page.body|richtext }}
+        Author section: 
+        <p>
+            {% image page.author.image fill-100x100 %}
+            Page created by {{ page.author.name}}
+            from {{ page.author.company_name }}
+            {% if page.author.company_url %}
+                <a href = "{{ page.author.company_url }}"> Visit Website </a>
+            {% endif %}
+
+        </p>
 
 {% endblock content %}
