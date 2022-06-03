@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static wagtailimages_tags%}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+
+{% block content %}
+    <h1> Hello Savvy </h1>
+    {% image page.banner_image fill-1400x200 as img %}
+    <img src="{{ img.url }}" alt="{{ img.alt }}">
+    <br>
+    Banner:
+    <h3>{{page.banner_title }}</h3>
+
+    Snipit:
+    <h4>{{page.snipit}}</h4>
+
+    Rich text:
+    {{ page.body|richtext }}
+
+{% endblock content %}

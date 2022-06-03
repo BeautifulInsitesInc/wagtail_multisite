@@ -25,6 +25,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 INSTALLED_APPS = [
     "home",
+    "savvy_blog",
     "search",
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
@@ -46,7 +47,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "storages",
-    'wagtail.contrib.settings'
+    'wagtail.contrib.settings',
+    
 ]
 
 MIDDLEWARE = [
