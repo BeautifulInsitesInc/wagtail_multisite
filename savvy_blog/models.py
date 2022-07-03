@@ -24,7 +24,7 @@ class SavvyBlogPage(Page):
     )
     snippet = models.TextField(blank=True)
     author =  models.ForeignKey(
-        "Author", #refering to the Class
+        "Author", #referring to the Class
         null=True,
         blank=True,
         on_delete=models.SET_NULL,
